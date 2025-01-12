@@ -1,12 +1,12 @@
-```
+``$(
 helm repo add datadog https://helm.datadoghq.com
-```
+)``
 
-```
+``$(
 helm repo update
-```
+)``
 
-```
+``$(
 CLUSTER_NAME='prodeks'
 API_KEY=''
 
@@ -23,4 +23,4 @@ helm install datadog -n datadog \
 --set datadog.processAgent.enabled=true \
 --set targetSystem='linux' \
 datadog/datadog --create-namespace
-```
+)``
