@@ -1,7 +1,7 @@
 terraform {
   backend "azurerm" {
     resource_group_name  = "devrelasaservice"
-    storage_account_name = "terraformprod92"
+    storage_account_name = "terraformtm"
     container_name       = "tfstate"
     key                  = "prod.terraform.tfstate"
   }
